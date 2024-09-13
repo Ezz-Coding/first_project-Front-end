@@ -1,0 +1,297 @@
+body{
+    background : linear-gradient(to right,black, #351f1f ,#562d2d,red);
+  margin: 0;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 5% 1fr 2fr 1fr;
+}
+.space1{
+    height: 10px;
+    
+}
+.nav img{
+    width: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+.nav a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px;
+    transition: .5s;
+    
+}
+nav{
+    text-align: center;
+
+}
+nav a:hover{
+    border-radius:20px ;
+letter-spacing: 5px;
+background-color: black;
+
+
+}
+.img1 img:hover {
+    background-color: black;
+    border-radius: 5px;
+    transform:scale(1.5) ;
+}
+hr{
+    width: 100%;
+    height:  4px;
+    background: linear-gradient(to right,darkgray,white);
+}
+.parants1{
+    display: grid;
+    grid-template-columns: 20% 1fr 10%;
+}
+.son h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    
+    animation: i 5s  forwards;
+    
+}
+@keyframes i{
+0%{
+   color: #000;
+}
+50%{
+    letter-spacing: 5px;
+    
+   
+}100%{
+    letter-spacing: 8px;
+    color: azure;
+}
+}
+h2{
+    color: aliceblue;
+    letter-spacing: 4px;
+}
+.son1 {
+    
+    border-radius: 20px;
+    border: 3px solid #ffffff11;
+    backdrop-filter: blur(5px);
+    width: 80%;
+    height: 500px;
+   
+
+    transition: 1s;
+    
+    
+}
+.parants2{
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+}
+.font1{
+text-align: center;
+}
+.son1:hover{
+    box-shadow:0 0 20px 5px #000;
+    transform: scale(1.1);
+}
+h3{
+    color: aliceblue;
+    font-size: x-large;
+    
+}
+input{
+    backdrop-filter: blur(20px);
+    background-color: #0000004a;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    color: aliceblue;
+    transition: .5s;
+}
+input:focus{
+    transform: scale(1.2);
+}
+button{
+    background:linear-gradient(to right ,red ,black) ;
+    border-radius: 20px;
+    color: aliceblue;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    transition: .5s;
+}
+button:hover{
+transform: scale(1.5);
+animation: move .15s infinite ;
+letter-spacing: 2px;
+}
+@keyframes move {
+    0%{
+    background:linear-gradient(to left,red ,black) ;
+
+
+    }
+    50%{
+    background:linear-gradient(black ,red) ;
+    
+
+    }
+    75%{
+        background:linear-gradient(red ,black) ;
+
+    }
+
+    100%{
+   
+        background:linear-gradient( to right,black ,red) ;
+
+    }
+}
+ form .space1{
+display: none;
+}
+
+.br1 br{
+    display: none;
+}
+@media (max-width:1032px) {
+    .Welcome h2 {
+font-size: medium;
+    }
+    .Welcome h3 {
+        font-size: small;
+            }
+            input{
+                width: 150px;
+            }
+          .son1{
+            width: 450px;
+            height: 300px;
+          }
+        .br1 br{
+            display: none;
+        }
+        form .space1{
+            display: block;
+            }
+        
+        .br2 br{
+            display: none;
+        } .br3 br{
+            display: none;
+        }
+        .br4 br{
+            display: none;
+        }
+}
+@media (max-width:575px) {
+    
+    .nav a{
+      display: none;
+    }
+    
+    
+    .nav img{
+        width: 30px;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .nav a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 15px;
+        transition: .5s;
+        
+    }
+   
+   
+    .img1 img:hover {
+        background-color: black;
+        border-radius: 5px;
+        transform:scale(1.1) ;
+    }
+    hr{
+        width: 100%;
+        height:  1px;
+        background: linear-gradient(to right,darkgray,white);
+    }
+    .parants1{
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+    }
+    .son h1{
+        color: aliceblue;
+        text-align: center;
+        font-size: 25px;
+        
+        animation: i 5s  forwards;
+        
+    }
+   
+    @keyframes i{
+    0%{
+       color: #000;
+    }
+    50%{
+        letter-spacing: 5px;
+        
+       
+    }100%{
+        letter-spacing: 8px;
+        color: azure;
+    }
+    }
+    h2{
+        color: aliceblue;
+        letter-spacing: 4px;
+    }
+    .son1 {
+        
+        border-radius: 20px;
+        border: 3px solid #ffffff11;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 300px;
+       
+    
+        transition: 1s;
+        
+        
+    }
+    
+    .font1{
+    text-align: center;
+    }
+    .son1:hover{
+        box-shadow:0 0 20px 5px #000;
+        transform: scale(1.1);
+    }
+    h3{
+        color: aliceblue;
+        font-size: x-large;
+        
+    }
+    input{
+        backdrop-filter: blur(20px);
+        background-color: #0000004a;
+        border: 0;
+        border-radius: 20px;
+        height: 40px;
+        color: aliceblue;
+        transition: .5s;
+    }
+    input:focus{
+        transform: scale(1.2);
+    }
+    button{
+        background:linear-gradient(to right ,red ,black) ;
+        border-radius: 20px;
+        color: aliceblue;
+        border: 0;
+        width: 100px;
+        height: 30px;
+        transition: .5s;
+    }}
+  

@@ -55,6 +55,13 @@ hr{
     animation: i 5s  forwards;
     
 }
+#font-js{
+    display: none;
+    color: aliceblue;
+    font-size: larger;
+    text-align: center;
+
+}
 @keyframes i{
 0%{
    color: #000;
@@ -156,7 +163,15 @@ display: none;
 .br1 br{
     display: none;
 }
+form{
+    display: none;
+}
 @media (max-width:1032px) {
+        
+    .nav a{
+        display: none;
+      }
+      
     .Welcome h2 {
 font-size: medium;
     }
@@ -187,12 +202,13 @@ font-size: medium;
         }
 }
 @media (max-width:575px) {
-    
-    .nav a{
-      display: none;
+
+    #font-js{
+        display: none;
+        color: aliceblue;
+        font-size: xx-small;
+        text-align: center;
     }
-    
-    
     .nav img{
         width: 30px;
         transition: .5s;
@@ -260,7 +276,7 @@ font-size: medium;
         
         
     }
-    
+  
     .font1{
     text-align: center;
     }
@@ -283,7 +299,8 @@ font-size: medium;
         transition: .5s;
     }
     input:focus{
-        transform: scale(1.2);
+        transform: scale(1);
+        
     }
     button{
         background:linear-gradient(to right ,red ,black) ;
@@ -293,5 +310,10 @@ font-size: medium;
         width: 100px;
         height: 30px;
         transition: .5s;
-    }}
+    }
+    button:hover{
+        transform: scale(1);
+        animation: none  ;
+        letter-spacing: 2px;
+        }}
   

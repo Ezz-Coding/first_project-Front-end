@@ -166,6 +166,9 @@ display: none;
 form{
     display: none;
 }
+#F2{
+    display: none;
+}
 @media (max-width:1032px) {
         
     .nav a{

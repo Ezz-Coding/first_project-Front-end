@@ -7,12 +7,14 @@ let divson =document.getElementById('son1');
 let divjs = document.getElementById('font-js');
 let Form2 = document.getElementById('F2');
 let btu = document.getElementById('btu1');
-let dataP ;
 
 
 
 
-    dataP = [];
+console.log(Form2);
+
+    
+let newdataP;
 
 
 if(localStorage.Email != null){
@@ -24,21 +26,21 @@ else{
 sim.onclick=function(){
     if(First.value != '' && Last.value != '' && pass.value != ''){
         
-        check();
+       
     
     let newdataE ={
         First:First.value,
         Last:Last.value,
     }
-    let newdataP ={
+     newdataP ={
         pass:pass.value,
     
     }
-    
-dataP.push(newdataP)
+
 dataE.push(newdataE);
-sessionStorage.setItem('pass',JSON.stringify(dataP));
+sessionStorage.setItem('pass',JSON.stringify(newdataP));
 localStorage.setItem('Email',JSON.stringify(dataE) );
+check();
     }
     else{
         if(First.value == ''){
@@ -64,22 +66,29 @@ localStorage.setItem('Email',JSON.stringify(dataE) );
     }  
     function  check() {
         let Emails = JSON.parse(localStorage.getItem('Email'));
-        let pass = JSON.parse(sessionStorage.getItem('pass'));
+     
         for (let i = 0; i < dataE.length; i++) {
             if(Emails[i].First == '3zz'  ){
                 console.log('hello');
                 if(Emails[i].Last == 'aldeen'){
-                     console.log(pass[0].pass);
-                     
-                   
+              
+                    
+                     let passs = JSON.parse(sessionStorage.pass); 
+                     console.log(passs.pass);
                     
                     
-                        if( pass[0].pass === 'ezz123444' ){ 
+                        if( passs.pass === 'ezz' ){ 
                             console.log('on');
                             
                             divson.style.display='none';
                             divjs.style.display='block';
-                        Form2.style.display = ' block';
+                        Form2.style.display = 'block';
+                         function timeout(){
+                        setTimeout(function() {
+                            location.href = 'http://127.0.0.1:5500/index2.html';}
+                        ,2000);
+                       }
+                       timeout();
                         }
                         else{
                             divson.style.display='none';
@@ -108,7 +117,5 @@ localStorage.setItem('Email',JSON.stringify(dataE) );
   
   
 }
-function settime() {
-    location.href = ''
-}
+
 

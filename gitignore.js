@@ -86,7 +86,7 @@ check();
                          function timeout(){
                         setTimeout(function() {
                             location.href = 'http://127.0.0.1:5500/index2.html';}
-                        ,2000);
+                        ,1000);
                        }
                        timeout();
                         }

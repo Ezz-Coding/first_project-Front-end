@@ -85,7 +85,7 @@ check();
                         Form2.style.display = 'block';
                          function timeout(){
                         setTimeout(function() {
-                            location.href = 'http://127.0.0.1:5500/index2.html';}
+                            location.href = 'https://ezz-coding.github.io/f1/';}
                         ,1000);
                        }
                        timeout();
